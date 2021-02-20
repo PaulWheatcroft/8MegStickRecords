@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="new-release">
+
+<h1>Add a New Release</h1>
+
+    <form id="new-release-form">
+
+            <label for="artist-name" >Artist Name</label>
+            <input type="text" id="artist-name" name="artist-name" class="form-control">
+            
+            <label for="song-title">Song Title</label>
+            <input type="text" id="song-title" label="song-title" class="form-control">
+
+            <label for="image-cover">Image Cover</label>
+            <input type="file" id="image-cover" label="image-cover" class="form-control">
+
+            <label for="spotify">Spotify Link</label>
+            <input type="url" id="spotify" label="spotify" class="form-control">
+
+            <label for="apple-music">Apple Music Link</label>
+            <input type="url" id="apple-music" label="apple-music" class="form-control">
+
+            <label for="youtube-music">YouTube Music Link</label>
+            <input type="url" id="youtube-music" label="youtube-music" class="form-control">
+
+            <label for="deezer">Deezer Link</label>
+            <input type="url" id="deezer" label="deezer" class="form-control">
+
+            <label for="tidal">Tidal Link</label>
+            <input type="url" id="tidal" label="tidal" class="form-control">
+
+            <label for="amazon-music">Amazon Music Link</label>
+            <input type="url" id="amazon-music" label="amazon-music" class="form-control"><br>
+
+            <button type="submit" id="submit-release" name="submit-release" class="btn btn-primary">Submit</button>
+
+    </form>
+
+</div>
+
+<script src="javascript/addrelease.js"></script>   
+</body>
+</html>
