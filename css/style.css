@@ -401,6 +401,12 @@ main {
 .visuallyhidden {
     display: none;
 }
+
+.btn-success {
+    color: #1a1a1a;
+    background-color: #B7FFA5; 
+}
+
 .text-input {
     background-color: #b3b3b3; 
     color: #1a1a1a;
