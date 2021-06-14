@@ -5,7 +5,7 @@ $.getJSON('data/releases.json', function(data){
             <div class="release-cover" id="${data[i].id}">
             </div>
             <div class="release-details">
-                <h2>${data[i].title}</small></h2>
+                <h2>${data[i].title}</h2>
                 <h3>${data[i].artist}</h3>
                 <ul class="list-inline">
                     <li class="list-inline-item">
