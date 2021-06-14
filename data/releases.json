@@ -1,0 +1,27 @@
+[
+    {
+        "id": "thegeneral",
+        "title": "The General",
+        "artist": "We Used To See The Sky",
+        "release_image": "../images/thegeneralcover.jpg",
+        "spotify": "https://open.spotify.com/track/5nvB3WSnaYwo7dZb7OBsue",
+        "apple_music": "https://music.apple.com/gb/album/the-general/1559943493?i=1559943498&app=music",
+        "youtube_music": "https://music.youtube.com/watch?v=doE4dxD3K1A",
+        "deezer": "https://www.deezer.com/track/1285543022",
+        "tidal": "https://listen.tidal.com/track/178477646",
+        "amazon_music": "https://music.amazon.co.uk/albums/B09123Z6D7?trackAsin=B09123Y3JS"
+    },
+    {
+        "id": "aformations",
+        "title": "A Formations (Deluxe Edition)",
+        "artist": "Pengamax",
+        "release_image": "../images/aformationscover.jpg",
+        "spotify": "https://open.spotify.com/album/61IcjiASqNMBjLczNsRZ1o",
+        "apple_music": "https://music.apple.com/gb/album/a-formations-deluxe-edition/1558729907?app=music",
+        "youtube_music": "https://music.youtube.com/browse/MPREb_8U9IrnEz0BP",
+        "deezer": "https://www.deezer.com/album/215399172",
+        "tidal": "https://listen.tidal.com/album/177468643",
+        "amazon_music": "https://music.amazon.co.uk/albums/B08Z73ZN1Y"
+    }
+]
+
