@@ -29,7 +29,7 @@ $.getJSON('data/releases.json', function(data){
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="${data[i].titdal}" title="Play ${data[i].title} on Tidal" target="_blank" class="release-icon">
+                        <a href="${data[i].tidal}" title="Play ${data[i].title} on Tidal" target="_blank" class="release-icon">
                             <img src="images/tidal.svg" alt="Tidal">
                         </a>
                     </li>
@@ -42,7 +42,7 @@ $.getJSON('data/releases.json', function(data){
             </div>
         </div>
         `;
-        $( "#catelogue" ).append( $( releaseHTML ) );
+        $( "#catalogue" ).append( $( releaseHTML ) );        
     })    
 })
 
