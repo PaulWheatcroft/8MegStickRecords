@@ -126,6 +126,8 @@ Each release section should display:
 - Cover art
 - Links to streaming services
 
+The release data is stored in JSON format and is appended to the page using JQuery.
+
 ### The Artists Page
 
 Beneath the navigation bar which is common to all of the pages the Artists page will contain a section on each artist. This progresses down the page in alphabetical order. 
@@ -187,14 +189,16 @@ I put the releases background CSS at the top of the files for easy access when n
 
 - HTML5
 - CSS3
+- Jquery
 
 ### Frameworks, Libraries & Programs Used
 
 - [Bootstrap](https://getbootstrap.com/) 4.4.1: Bootstrap was used to assist with the framework build and responsiveness of the website
 - [Google Fonts](https://fonts.google.com/): Google fonts were used to import the 'Noto Sans', 'Noto Sans TC' and 'Monoton' font into the style.css file which is used on all pages throughout the project
 - [Font Awesome](https://fontawesome.com/): Font Awesome was used on all pages throughout the website for social media icons
-- [jQuery](https://jquery.com/): jQuery came with Bootstrap to make the navbar responsive
+- [jQuery](https://jquery.com/): used to display the releases catalogue within the index.html file
 - [JavaScript](https://www.javascript.com/): A small JavaScript program was used to facility the artist galleries
+- [JSON](https://www.json.org/json-en.html): The releases catalogue is held in JSON
 - [Git](https://git-scm.com/): Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub
 - [Gitpod](https://www.gitpod.io/): Gitpod was used as the development environment
 - [GitHub](https://github.com/): GitHub is used to store the projects code after being pushed from Git
@@ -341,7 +345,6 @@ Thanks to my Code Institue mentor for useful direction and insights.
 
 ## Further Development Ideas
 
-- For ease of administration it would be beneficial to create a form that could populate the new releases meaning someone non-technical could add these to the page.
 - It would be nice if the Notify Me button in the hero image on the Releases page opened the form in a modal box overlaying the Releases page.
 - The JavaScript gallery used is adequate but not as elegant as it could be. For instance the thumbnails are squashed images.
 - It may be necessary to introduce pagination for the releases in future. Especially on a mobile phone view.
