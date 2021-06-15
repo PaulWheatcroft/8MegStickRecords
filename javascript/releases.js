@@ -43,6 +43,45 @@ $.getJSON('data/releases.json', function(data){
         </div>
         `;
         $( "#catalogue" ).append( $( releaseHTML ) );        
-    })    
+    })
+    heroHTML = `
+        <header class="hero-details p-2">
+            <h1 class="hero-details">${data[0].title}</h1>
+            <h2 class="hero-details">${data[0].artist}</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="${data[0].spotify}" title="Play ${data[0].title} on Spotify" target="_blank" class="hero-release-icon">
+                        <img src="images/spotify-hero.svg" alt="Spotify">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="${data[0].apple_music}" title="Play ${data[0].title} on Apple Music" target="_blank" class="hero-release-icon">
+                        <img src="images/applemusic-hero.svg" alt="Apple Music">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="${data[0].youtube_music}" title="Play ${data[0].title} on YouTube Music" target="_blank" class="hero-release-icon">
+                        <img src="images/youtubemusic-hero.svg" alt="YouTube Music">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="${data[0].deezer}" title="Play ${data[0].title} on Deezer" target="_blank" class="hero-release-icon">
+                        <img src="images/deezer-hero.svg" alt="Deezer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="${data[0].tidal}" title="Play ${data[0].title} on Tidal" target="_blank" class="hero-release-icon">
+                        <img src="images/tidal-hero.svg" alt="Tidal">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="${data[0].amazon_music}" title="Play ${data[0].title} on Amazon Music" target="_blank" class="hero-release-icon">
+                        <img src="images/amazon-hero.svg" alt="Amazon Music">
+                    </a>
+                </li>
+            </ul>
+        </header>
+    `;
+    $( "#hero-release" ).html(heroHTML); 
 })
 
