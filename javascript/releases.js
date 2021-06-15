@@ -42,7 +42,7 @@ $.getJSON('data/releases.json', function(data){
             </div>
         </div>
         `;
-        console.log(releaseHTML);
+        $( "#catelogue" ).append( $( releaseHTML ) );
     })    
 })
 
