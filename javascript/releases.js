@@ -46,40 +46,14 @@ $.getJSON('data/releases.json', function(data){
     })
     heroHTML = `
         <header class="hero-details p-2">
-            <h1 class="hero-details">${data[0].title}</h1>
-            <h2 class="hero-details">${data[0].artist}</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="${data[0].spotify}" title="Play ${data[0].title} on Spotify" target="_blank" class="hero-release-icon">
-                        <img src="images/spotify-hero.svg" alt="Spotify">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="${data[0].apple_music}" title="Play ${data[0].title} on Apple Music" target="_blank" class="hero-release-icon">
-                        <img src="images/applemusic-hero.svg" alt="Apple Music">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="${data[0].youtube_music}" title="Play ${data[0].title} on YouTube Music" target="_blank" class="hero-release-icon">
-                        <img src="images/youtubemusic-hero.svg" alt="YouTube Music">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="${data[0].deezer}" title="Play ${data[0].title} on Deezer" target="_blank" class="hero-release-icon">
-                        <img src="images/deezer-hero.svg" alt="Deezer">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="${data[0].tidal}" title="Play ${data[0].title} on Tidal" target="_blank" class="hero-release-icon">
-                        <img src="images/tidal-hero.svg" alt="Tidal">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="${data[0].amazon_music}" title="Play ${data[0].title} on Amazon Music" target="_blank" class="hero-release-icon">
-                        <img src="images/amazon-hero.svg" alt="Amazon Music">
-                    </a>
-                </li>
-            </ul>
+            <h2 class="hero-details">Pengamax</h2>
+            <h2 class="hero-details">versus</h2>
+            <h2 class="hero-details">PAULI</h2>
+            <h1 class="hero-details">LIVE</h1>
+            <p><a href="https://youtube.com/playlist?list=PLfugVxV2CPtq0-HP6Q8pXmPGM9Ti4ksZ9" target="_blank">Watch on YouTube <i class="fab fa-youtube"></i></a></p>
+            <p><a href="pvp.html">Find out more <i class="fas fa-link"></i></a></p>
+            
+            
         </header>
     `;
     $( "#hero-release" ).html(heroHTML); 
