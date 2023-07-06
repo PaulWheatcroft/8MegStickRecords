@@ -1,5 +1,17 @@
 [
     {
+        "id": "lovelife",
+        "title": "Love Life",
+        "artist": "PAULI",
+        "release_image": "../images/lovelifecover.jpg",
+        "spotify": "https://open.spotify.com/track/60DAJKWJVB6e44T2ZTdbEJ",
+        "apple_music": "https://music.apple.com/gb/album/love-life/1695696635?i=1695696686&app=music",
+        "youtube_music": "https://music.youtube.com/watch?v=2qWUVIUog0w",
+        "deezer": "https://www.deezer.com/track/1285543022",
+        "tidal": "https://listen.tidal.com/track/303064386",
+        "amazon_music": "https://music.amazon.co.uk/albums/B0CB42FNFQ?trackAsin=B0CB3YMMN4"
+    },
+    {
         "id": "thegeneral",
         "title": "The General",
         "artist": "We Used To See The Sky",

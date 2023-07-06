@@ -24,11 +24,6 @@ $.getJSON('data/releases.json', function(data){
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="${data[i].deezer}" title="Play ${data[i].title} on Deezer" target="_blank" class="release-icon">
-                            <img src="images/deezer.svg" alt="Deezer">
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
                         <a href="${data[i].tidal}" title="Play ${data[i].title} on Tidal" target="_blank" class="release-icon">
                             <img src="images/tidal.svg" alt="Tidal">
                         </a>
@@ -46,12 +41,39 @@ $.getJSON('data/releases.json', function(data){
     })
     heroHTML = `
         <header class="hero-details p-2">
-            <h2 class="hero-details">Pengamax</h2>
-            <h2 class="hero-details">versus</h2>
             <h2 class="hero-details">PAULI</h2>
-            <h1 class="hero-details">LIVE</h1>
-            <p><a href="https://youtube.com/playlist?list=PLfugVxV2CPtq0-HP6Q8pXmPGM9Ti4ksZ9" target="_blank">Watch on YouTube <i class="fab fa-youtube"></i></a></p>
-            <p><a href="pvp.html">Find out more <i class="fas fa-link"></i></a></p>
+            <h2 class="hero-details">Love Life</h2>
+            <p>Would you be you?</p>
+            <div class="hero-links">
+                <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://open.spotify.com/track/60DAJKWJVB6e44T2ZTdbEJ" title="Play Love Life on Spotify" target="_blank" class="release-icon">
+                        <img src="images/spotify.svg" alt="Spotify">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://music.apple.com/gb/album/love-life/1695696635?i=1695696686&app=music" title="Play LOve Life on Apple Music" target="_blank" class="release-icon">
+                        <img src="images/applemusic.svg" alt="Apple Music">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://music.youtube.com/watch?v=2qWUVIUog0w" title="Play Love Life on YouTube Music" target="_blank" class="release-icon">
+                        <img src="images/youtubemusic.svg" alt="YouTube Music">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://listen.tidal.com/track/303064386" title="Play Love Life on Tidal" target="_blank" class="release-icon">
+                        <img src="images/tidal.svg" alt="Tidal">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://music.amazon.co.uk/albums/B0CB42FNFQ?trackAsin=B0CB3YMMN4" title="Play Love Life on Amazon Music" target="_blank" class="release-icon">
+                        <img src="images/amazon.svg" alt="Amazon Music">
+                    </a>
+                </li>
+            </ul>
+            </div>
+           
             
             
         </header>
