@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>8 Meg Stick Records</title>
 </head>
+
 
 <body>
     <nav>
         <span id="logo">
-
+            <img src="./images/8meglogo.svg" style="height: 50px;" alt="">
         </span>
         <ul>
             <li>Releases</li>
@@ -18,21 +20,21 @@
             <li>About</li>
         </ul>
     </nav>
-    <div class="div" id="hero">
-        <h1>Caught</h1>
-    </div>
-    <div id="releases">
-        <ul>
-            <li>Love Life</li>
-            <li>The General</li>
-            <li>A Formations</li>
-            <li>Tunneling</li>
-            <li>4 Walls</li>
-        </ul>
-    </div>
-    <div id="footer">
-        <a href="mailto:paul@8megstickrecords.com">paul@8megstickrecords.com</a>
-    </div>
+    <main id="app">
+        <div class="div" id="hero">
+            <h1>Caught</h1>
+        </div>
+        <div id="releases">
+            <ul>
+                <li v-for="release in releases">{{ release.title }}</li>
+            </ul>
+        </div>
+        <div id="footer">
+            <a href="mailto:paul@8megstickrecords.com">paul@8megstickrecords.com</a>
+        </div>
+    </main>
 </body>
+<script src="./javascript/getData.js">
+</script>
 
 </html>
