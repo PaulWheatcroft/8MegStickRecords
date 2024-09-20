@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nanum+Gothic:wght@400;700;800&display=swap"
+        rel="stylesheet">
     <title>8 Meg Stick Records</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <nav class="bg-pink-300 p-4 flex justify-between items-center">
+    <nav class="bg-pink-300 p-4 flex justify-between items-center border-b-2 border-solid border-blue-200">
         <span id="logo">
             <img src="./images/8meglogo.svg" class="h-12" alt="Logo">
         </span>
@@ -25,8 +26,24 @@
         </ul>
     </nav>
     <main id="app" class="flex-grow bg-gray-200">
-        <div id="hero" class="min-h-screen flex items-center justify-center bg-gray-200">
-            <h1 class="text-5xl font-bold">Caught</h1>
+        <div id="hero" class="min-h-screen flex flex-col items-center justify-center hero">
+            <h1 class="text-8xl font-bold tracking-tight">{{releases[0].title}}</h1>
+            <h2 class="text-5xl font-bold">{{releases[0].artist}}</h2>
+            <div class="hero-links border-2 border-solid border-black mt-2 p-2 rounded-full">
+                <div class="spotify pb-2"><a :href="`${releases[0].spotify}`" class="streaming-link"><img
+                            src="./images/spotify.svg" alt="Link to Spotify" class="streaming-link"></a>
+                </div>
+                <div class="apple-music pb-2"><a :href="`${releases[0].apple}`" class="streaming-link"><img
+                            src="./images/applemusic.svg" alt="Link to Apple Music" class="streaming-link"></a></div>
+                <div class="youtube-music pb-1"><a :href="`${releases[0].youtube}`" class="streaming-link"><img
+                            src="./images/youtubemusic.svg" alt="Link to YouTube Music" class="streaming-link"></a>
+                </div>
+                <div class="deezer pb-1"><a :href="`${releases[0].deezer}`" class="streaming-link"><img src="./images/deezer.svg"
+                            alt="Link to Deezer" class="streaming-link"></a></div>
+                <div class="amazon"><a :href="`${releases[0].amazon}`" class="streaming-link"><img src="./images/amazon.svg"
+                            alt="Link to Amazon Music" class="streaming-link"></a>
+                </div>
+            </div>
         </div>
         <div id="releases" class="p-4">
             <h2 class="text-center pb-5 text-5xl">Releases</h2>

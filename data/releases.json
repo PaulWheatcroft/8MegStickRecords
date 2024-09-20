@@ -1,5 +1,17 @@
 [
     {
+        "id": "caught",
+        "title": "Caught",
+        "artist": "PAULI",
+        "cover": "../images/caughtcover.jpg",
+        "spotify": "https://open.spotify.com/track/60DAJKWJVB6e44T2ZTdbEJ",
+        "apple": "https://music.apple.com/gb/album/love-life/1695696635?i=1695696686&app=music",
+        "youtube": "https://music.youtube.com/watch?v=2qWUVIUog0w",
+        "deezer": "https://www.deezer.com/track/1285543022",
+        "tidal": "https://listen.tidal.com/track/303064386",
+        "amazon": "https://music.amazon.co.uk/albums/B0CB42FNFQ?trackAsin=B0CB3YMMN4"
+    },
+    {
         "id": "lovelife",
         "title": "Love Life",
         "artist": "PAULI",
