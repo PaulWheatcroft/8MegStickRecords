@@ -5,36 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <title>8 Meg Stick Records</title>
 </head>
 
-
-<body>
-    <nav>
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-pink-300 p-4 flex justify-between items-center">
         <span id="logo">
-            <img src="./images/8meglogo.svg" style="height: 50px;" alt="">
+            <img src="./images/8meglogo.svg" class="h-12" alt="Logo">
         </span>
-        <ul>
-            <li>Releases</li>
-            <li>Artists</li>
-            <li>About</li>
+        <ul class="flex space-x-4 text-lime-600">
+            <li><a href="#releases" class="">Releases</a></li>
+            <li><a href="#artists" class="">Artists</a></li>
+            <li><a href="#about" class="">About</a></li>
         </ul>
     </nav>
-    <main id="app">
-        <div class="div" id="hero">
-            <h1>Caught</h1>
+    <main id="app" class="flex-grow bg-gray-200">
+        <div id="hero" class="min-h-screen flex items-center justify-center bg-gray-200">
+            <h1 class="text-5xl font-bold">Caught</h1>
         </div>
-        <div id="releases">
-            <ul>
-                <li v-for="release in releases">{{ release.title }}</li>
+        <div id="releases" class="p-4">
+            <h2 class="text-center pb-5 text-5xl">Releases</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <li v-for="release in releases" id="{{ release.id }}" class="">
+                    <div class="w-full bg-white p-4 rounded shadow text-center flex flex-col">
+                        <h3 class="track-title bg-blue-200 rounded">
+                            {{ release.title }}
+                        </h3>
+                        <h4 class="artist text-3xl">
+                            {{ release.artist }}
+                        </h4>
+                        <img :src="`./images/${release.cover}`" :alt="`Cover image for ${release.title}`"
+                            class="rounded">
+                        <div class="links flex justify-between bg-pink-300 mt-2 p-2 rounded-full">
+                            <div class="spotify "><a :href="`${release.spotify}`" class="streaming-link"><img
+                                        src="./images/spotify.svg" alt="Link to Spotify" class="streaming-link"></a>
+                            </div>
+                            <div class="apple-music"><a :href="`${release.apple}`" class="streaming-link"><img
+                                        src="./images/applemusic.svg" alt="Link to Apple Music"
+                                        class="streaming-link"></a></div>
+                            <div class="youtube-music"><a :href="`${release.youtube}`" class="streaming-link"><img
+                                        src="./images/youtubemusic.svg" alt="Link to YouTube Music"
+                                        class="streaming-link"></a></div>
+                            <div class="deezer"><a :href="`${release.deezer}`" class="streaming-link"><img
+                                        src="./images/deezer.svg" alt="Link to Deezer" class="streaming-link"></a></div>
+                            <div class="tidal"><a :href="`${release.amazon}`" class="streaming-link"><img
+                                        src="./images/amazon.svg" alt="Link to Amazon Music" class="streaming-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
-        <div id="footer">
-            <a href="mailto:paul@8megstickrecords.com">paul@8megstickrecords.com</a>
-        </div>
     </main>
+    <footer id="footer" class="bg-gray-800 text-white p-4 text-center">
+        <a href="mailto:paul@8megstickrecords.com" class="hover:underline">paul@8megstickrecords.com</a>
+    </footer>
 </body>
-<script src="./javascript/getData.js">
-</script>
+<script src="./javascript/getData.js"></script>
 
 </html>

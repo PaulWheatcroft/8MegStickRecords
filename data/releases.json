@@ -3,157 +3,157 @@
         "id": "lovelife",
         "title": "Love Life",
         "artist": "PAULI",
-        "release_image": "../images/lovelifecover.jpg",
+        "cover": "../images/lovelifecover.jpg",
         "spotify": "https://open.spotify.com/track/60DAJKWJVB6e44T2ZTdbEJ",
-        "apple_music": "https://music.apple.com/gb/album/love-life/1695696635?i=1695696686&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=2qWUVIUog0w",
+        "apple": "https://music.apple.com/gb/album/love-life/1695696635?i=1695696686&app=music",
+        "youtube": "https://music.youtube.com/watch?v=2qWUVIUog0w",
         "deezer": "https://www.deezer.com/track/1285543022",
         "tidal": "https://listen.tidal.com/track/303064386",
-        "amazon_music": "https://music.amazon.co.uk/albums/B0CB42FNFQ?trackAsin=B0CB3YMMN4"
+        "amazon": "https://music.amazon.co.uk/albums/B0CB42FNFQ?trackAsin=B0CB3YMMN4"
     },
     {
         "id": "thegeneral",
         "title": "The General",
         "artist": "We Used To See The Sky",
-        "release_image": "../images/thegeneralcover.jpg",
+        "cover": "../images/thegeneralcover.jpg",
         "spotify": "https://open.spotify.com/track/5nvB3WSnaYwo7dZb7OBsue",
-        "apple_music": "https://music.apple.com/gb/album/the-general/1559943493?i=1559943498&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=doE4dxD3K1A",
+        "apple": "https://music.apple.com/gb/album/the-general/1559943493?i=1559943498&app=music",
+        "youtube": "https://music.youtube.com/watch?v=doE4dxD3K1A",
         "deezer": "https://www.deezer.com/track/1285543022",
         "tidal": "https://listen.tidal.com/album/178477645/track/178477646",
-        "amazon_music": "https://music.amazon.co.uk/albums/B09123Z6D7?trackAsin=B09123Y3JS"
+        "amazon": "https://music.amazon.co.uk/albums/B09123Z6D7?trackAsin=B09123Y3JS"
     },
     {
         "id": "aformations",
         "title": "A Formations",
         "artist": "Pengamax",
-        "release_image": "../images/aformationscover.jpg",
+        "cover": "../images/aformationscover.jpg",
         "spotify": "https://open.spotify.com/album/61IcjiASqNMBjLczNsRZ1o",
-        "apple_music": "https://music.apple.com/gb/album/a-formations-deluxe-edition/1558729907?app=music",
-        "youtube_music": "https://music.youtube.com/browse/MPREb_8U9IrnEz0BP",
+        "apple": "https://music.apple.com/gb/album/a-formations-deluxe-edition/1558729907?app=music",
+        "youtube": "https://music.youtube.com/browse/MPREb_8U9IrnEz0BP",
         "deezer": "https://www.deezer.com/album/215399172",
         "tidal": "https://listen.tidal.com/album/177468643",
-        "amazon_music": "https://music.amazon.co.uk/albums/B08Z73ZN1Y"
+        "amazon": "https://music.amazon.co.uk/albums/B08Z73ZN1Y"
     },
     {
         "id": "tunneling",
         "title": "Tunneling",
         "artist": "Pengamax",
-        "release_image": "../images/tunnelingcover.jpg",
+        "cover": "../images/tunnelingcover.jpg",
         "spotify": "https://open.spotify.com/track/2VNSSOyZXXsBWDR7zvBsxA",
-        "apple_music": "https://music.apple.com/gb/album/tunneling/1551084038?i=1551084041&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=9zbJQyuRfBY",
+        "apple": "https://music.apple.com/gb/album/tunneling/1551084038?i=1551084041&app=music",
+        "youtube": "https://music.youtube.com/watch?v=9zbJQyuRfBY",
         "deezer": "https://www.deezer.com/track/1224408172",
         "tidal": "https://listen.tidal.com/track/171424222",
-        "amazon_music": "https://music.amazon.co.uk/albums/B08V87RPH1?trackAsin=B08V88HK7C"
+        "amazon": "https://music.amazon.co.uk/albums/B08V87RPH1?trackAsin=B08V88HK7C"
     },
     {
-        "id": "walls",
+        "id": "4walls",
         "title": "4 Walls",
         "artist": "PAULI",
-        "release_image": "../images/4wallscover.jpg",
+        "cover": "../images/4wallscover.jpg",
         "spotify": "https://open.spotify.com/track/0zqRaLosoznM9sFk1oqIWK",
-        "apple_music": "https://music.apple.com/gb/album/4-walls/1548971598?i=1548971607&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=jkabVkaLxd0",
+        "apple": "https://music.apple.com/gb/album/4-walls/1548971598?i=1548971607&app=music",
+        "youtube": "https://music.youtube.com/watch?v=jkabVkaLxd0",
         "deezer": "https://www.deezer.com/track/1208365282",
         "tidal": "https://listen.tidal.com/track/169486563",
-        "amazon_music": "https://music.amazon.co.uk/albums/B08T217PNV?trackAsin=B08T21HZXV"
+        "amazon": "https://music.amazon.co.uk/albums/B08T217PNV?trackAsin=B08T21HZXV"
     },
     {
         "id": "braggpeak",
         "title": "Bragg Peak",
         "artist": "Pengamax",
-        "release_image": "../images/braggpeakcover.jpg",
+        "cover": "../images/braggpeakcover.jpg",
         "spotify": "https://open.spotify.com/track/1FsfQIQKWZzF7Yej1wsGJf",
-        "apple_music": "https://music.apple.com/gb/album/bragg-peak/1545598436?i=1545598961&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=PAkBZhRFFeo",
+        "apple": "https://music.apple.com/gb/album/bragg-peak/1545598436?i=1545598961&app=music",
+        "youtube": "https://music.youtube.com/watch?v=PAkBZhRFFeo",
         "deezer": "https://www.deezer.com/track/1182957512",
         "tidal": "https://listen.tidal.com/track/166774360",
-        "amazon_music": "https://music.amazon.co.uk/albums/B08QYSN1LR?trackAsin=B08QZST8N9"
+        "amazon": "https://music.amazon.co.uk/albums/B08QYSN1LR?trackAsin=B08QZST8N9"
     },
     {
         "id": "gformations",
         "title": "G Formations",
         "artist": "Pengamax",
-        "release_image": "../images/gformationscover.jpg",
+        "cover": "../images/gformationscover.jpg",
         "spotify": "https://open.spotify.com/album/3fMta1sab64pONI9omuqYx",
-        "apple_music": "https://music.apple.com/gb/album/g-formations-ep/1542778659?app=music",
-        "youtube_music": "https://music.youtube.com/browse/MPREb_XEjU1S0Pt8g",
+        "apple": "https://music.apple.com/gb/album/g-formations-ep/1542778659?app=music",
+        "youtube": "https://music.youtube.com/browse/MPREb_XEjU1S0Pt8g",
         "deezer": "https://www.deezer.com/album/190062182",
         "tidal": "https://listen.tidal.com/album/164311267",
-        "amazon_music": "https://music.amazon.co.uk/albums/B08PDNQV6B"
+        "amazon": "https://music.amazon.co.uk/albums/B08PDNQV6B"
     },
     {
         "id": "mitti",
         "title": "Mitti",
         "artist": "Pengamax",
-        "release_image": "../images/mitticover.jpg",
+        "cover": "../images/mitticover.jpg",
         "spotify": "https://open.spotify.com/track/11PpKnmk8rdPr7ykHLkwsr",
-        "apple_music": "https://music.apple.com/gb/album/mitti/1528829527?i=1528829544&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=lqsIHcMtfVc",
+        "apple": "https://music.apple.com/gb/album/mitti/1528829527?i=1528829544&app=music",
+        "youtube": "https://music.youtube.com/watch?v=lqsIHcMtfVc",
         "deezer": "https://www.deezer.com/track/1058962892",
         "tidal": "https://listen.tidal.com/track/152916301",
-        "amazon_music": "https://music.amazon.co.uk/albums/B08GJ9H9VG?trackAsin=B08GHKDCPK"
+        "amazon": "https://music.amazon.co.uk/albums/B08GJ9H9VG?trackAsin=B08GHKDCPK"
     },
     {
         "id": "deepfake",
         "title": "Deep Fake",
         "artist": "We Used To See The Sky",
-        "release_image": "../images/deepfakecover.jpg",
+        "cover": "../images/deepfakecover.jpg",
         "spotify": "https://open.spotify.com/track/5mIeKSvA2hJGicegpRapFp",
-        "apple_music": "https://music.apple.com/gb/album/deep-fake/1501828656?i=1501828662&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=ruIbod43JBg",
+        "apple": "https://music.apple.com/gb/album/deep-fake/1501828656?i=1501828662&app=music",
+        "youtube": "https://music.youtube.com/watch?v=ruIbod43JBg",
         "deezer": "https://www.deezer.com/track/897944372",
         "tidal": "https://listen.tidal.com/track/133526849",
-        "amazon_music": "https://music.amazon.co.uk/albums/B085LR4HNT?trackAsin=B085LQXYZ4"
+        "amazon": "https://music.amazon.co.uk/albums/B085LR4HNT?trackAsin=B085LQXYZ4"
     },
     {
         "id": "muchbetter",
         "title": "Much Better in our Youth",
         "artist": "Don Pablo",
-        "release_image": "../images/muchbettercover.jpg",
+        "cover": "../images/muchbettercover.jpg",
         "spotify": "https://open.spotify.com/album/0D402Tx3gGyqQbVT0Jzqyb",
-        "apple_music": "https://music.apple.com/gb/album/much-better-in-our-youth-ep/1455603981?app=music",
-        "youtube_music": "https://music.youtube.com/playlist?list=OLAK5uy_kvGj5gnb3Am9u9Ud-f1_7l6TD8uhyDYYA",
+        "apple": "https://music.apple.com/gb/album/much-better-in-our-youth-ep/1455603981?app=music",
+        "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_kvGj5gnb3Am9u9Ud-f1_7l6TD8uhyDYYA",
         "deezer": "https://www.deezer.com/album/89688492",
         "tidal": "https://listen.tidal.com/album/105484942",
-        "amazon_music": "https://music.amazon.co.uk/albums/B07PH25FFH"
+        "amazon": "https://music.amazon.co.uk/albums/B07PH25FFH"
     },
     {
         "id": "prettypicture",
         "title": "Pretty Picture",
         "artist": "Don Pablo",
-        "release_image": "../images/prettypicturecover.jpg",
+        "cover": "../images/prettypicturecover.jpg",
         "spotify": "https://open.spotify.com/track/04xZrq6yq8cHIMqn38XX3L",
-        "apple_music": "https://music.apple.com/gb/album/pretty-picture/1450574862?i=1450574865&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=UQEdH3CqAms",
+        "apple": "https://music.apple.com/gb/album/pretty-picture/1450574862?i=1450574865&app=music",
+        "youtube": "https://music.youtube.com/watch?v=UQEdH3CqAms",
         "deezer": "https://www.deezer.com/track/622917312",
         "tidal": "https://listen.tidal.com/track/103034548",
-        "amazon_music": "https://music.amazon.co.uk/albums/B07N4G67MD?trackAsin=B07N4H9CPH"
+        "amazon": "https://music.amazon.co.uk/albums/B07N4G67MD?trackAsin=B07N4H9CPH"
     },
     {
         "id": "slippyguppy",
         "title": "Slippy Guppy",
         "artist": "We Used To See The Sky",
-        "release_image": "../images/slippyguppycover.jpg",
+        "cover": "../images/slippyguppycover.jpg",
         "spotify": "https://open.spotify.com/track/1Mek99XAURyEJlcxLJaJtf",
-        "apple_music": "https://music.apple.com/gb/album/slippy-guppy/1447019935?i=1447019938&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=WMlpfJHvhoM",
+        "apple": "https://music.apple.com/gb/album/slippy-guppy/1447019935?i=1447019938&app=music",
+        "youtube": "https://music.youtube.com/watch?v=WMlpfJHvhoM",
         "deezer": "https://www.deezer.com/track/606595182",
         "tidal": "https://listen.tidal.com/track/101182790",
-        "amazon_music": "https://music.amazon.co.uk/albums/B07LDXXJ7N?trackAsin=B07LDYD6LN"
+        "amazon": "https://music.amazon.co.uk/albums/B07LDXXJ7N?trackAsin=B07LDYD6LN"
     },
     {
         "id": "campfire",
         "title": "Campfire",
         "artist": "Don Pablo",
-        "release_image": "../images/campfirecover.jpg",
+        "cover": "../images/campfirecover.jpg",
         "spotify": "https://open.spotify.com/track/4qDhG941H4fnhGJ2ZCKCWb",
-        "apple_music": "https://music.apple.com/gb/album/campfire/1419710456?i=1419710629&app=music",
-        "youtube_music": "https://music.youtube.com/watch?v=EDyfVNy1Kis",
+        "apple": "https://music.apple.com/gb/album/campfire/1419710456?i=1419710629&app=music",
+        "youtube": "https://music.youtube.com/watch?v=EDyfVNy1Kis",
         "deezer": "https://www.deezer.com/track/534883222",
         "tidal": "https://listen.tidal.com/track/92798513",
-        "amazon_music": "https://music.amazon.co.uk/albums/B07G44Y5J9?trackAsin=B07G488TXK"
+        "amazon": "https://music.amazon.co.uk/albums/B07G44Y5J9?trackAsin=B07G488TXK"
     }
 ]
 
