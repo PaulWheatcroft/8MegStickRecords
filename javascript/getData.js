@@ -7,7 +7,6 @@ async function getData() {
         }
 
         const json = await response.json();
-        console.log(json);
         const { createApp, ref } = Vue
         createApp({
             setup() {
