@@ -2,362 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="theme-color" content="#d4aa00">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#d4aa00">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <title>The Artists on 8 Meg Stick Records</title>
-<!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nanum+Gothic:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <title>8 Meg Stick Records</title>
 </head>
 
-<body>
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg my-dark">
-        <div class="container-fluid my-container">
-            <a href="index.html">        
-                <img src="images/8meg-text.svg" alt="8 Meg Stick Records" id="meg-logo">
-            </a>
-            <button class="navbar-toggler" id="my-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" >
-                <span id="menu-lines"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse my-nav" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item my-nav" id="releases">
-                        <a class="nav-link" href="index.html#releases-heading">Releases</a>
-                    </li>
-                    <li class="nav-item my-nav" id="live">
-                        <a class="nav-link" href="pvp.html">Live</a>
-                    </li>
-                    <li class="nav-item active my-nav" id="artists">
-                        <a class="nav-link" href="artists.html">Artists</a>
-                        <span class="sr-only">(current)</span>
-                    </li>
-                    <li class="nav-item my-nav" id="about">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item my-nav" id="get-in-touch">
-                        <a class="nav-link" href="contact.html">Get in Touch</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-pink-300 p-4 flex justify-between items-center border-b-2 border-solid border-blue-200">
+        <span id="logo">
+            <img src="./images/8meglogo.svg" class="h-12" alt="Logo">
+        </span>
+        <ul class="flex space-x-4 text-lime-600">
+            <li><a href="index.html" class="">Releases</a></li>
+            <li><a href="artists.html" class="">Artists</a></li>
+            <li><a href="about.html" class="">About</a></li>
+        </ul>
     </nav>
-<!-- Page heading -->
-    <header class="headings">
-        <h1>Artists</h1>
-    </header>
+    <main id="app" class="flex-grow bg-gray-200">
+        <div id="artists" class="p-4">
+            <h2 class="text-center pb-5 text-5xl">Artists</h2>
+        </div>
+        <div class="container mx-auto">
+            <!-- Don Pablo Card -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-6 w-full lg:w-3/4 mx-auto">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">Don Pablo</h2>
+                    <p class="text-gray-700 mb-4">Born out of the chaotic, post-millennium haze, Don Pablo was a force
+                        of nature. Between 2002 and 2006, they unleashed a barrage of wildly imaginative tracks that
+                        left an indelible mark on the music scene.</p>
+                    <p class="text-gray-700 mb-4">Fast forward to today, and the duo has been buried under the mundane
+                        grind of everyday life. But fear not, because <strong>8 Meg Stick Records</strong> is on a
+                        mission to dig up Don Pablo's buried treasure and share it with anyone who dares to listen. Fun
+                        fact: <strong>8 Meg Stick</strong> is actually the title of a Don Pablo song.</p>
+                    <p class="text-gray-700 mb-4">Their sound? It's a paradox. As organic as it is synthetic, as warm as
+                        it is cold. Their debut release, <strong>Campfire</strong>, features trembling Hammond organs,
+                        while their second single, <strong>Pretty Picture</strong>, growls with synths and paints a
+                        vivid, Bonnie & Clyde-esque narrative. But it's their E.P., <strong>Much Better in Our
+                            Youth</strong>, that truly reveals Don Pablo's soul, with melancholic tales of lost loves,
+                        missed chances, and the ever-changing weather.</p>
+                </div>
+            </div>
 
-<!-- This section contains a section on each artist -->
-    <main class="container-fluid">
-    <!-- Don Pablo -->
-        <div class="content-container row container-dark">
-            <div class="content-one col-xl-4">
-                <img src="images/donpablo.svg" alt="Don Pablo logo">
-            </div>
-            <div class="content-two col-xl-4">
-                <p>Don Pablo were born out of the whimsy that followed the beginning of a new millennium. Neither in or out of fashion their purple patch, between 2002 and 2006, produced a collection of wonderfully imaginative song.</p>
-                <p>Now long since buried beneath the weight of responsibility and service delivery the duo are no longer producing in this era of content creation, but 8 Meg Stick Records are committed to unearthing the treasure trove that is Don Pablo’s output and making it available to literally anyone that will listen.</p>
-                <p>A little-known fact is that 8 Meg Stick is the title for a Don Pablo song.</p>
-                <p>Their sound is as organic as it is plastic and as warm as it is cold. Hammond organs tremble on their debut release Campfire and synths growl on their second single Pretty Picture with the latter’s Bonny & Clyde evoking prose setting a desperate scene with huge imagination. But it is with the release of the E.P. Much Better in Our Youth that the real identity of Don Pablo comes to the fore with its melancholy tales of lost loves, missed opportunities and the weather.</p>
-                <ul class="list-inline artist-social-links text-center">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/8-Meg-Stick-Records-113706007210863" target="_blank">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/8MegStick" target="_blank">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/eightmegstick/" target="_blank">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-three col-xl-4">
-                <div class="artist-youtube">
-                    <iframe src="https://www.youtube.com/embed/zP6_ADamRQU" title="Don Pablo on YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="artist-images">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/donpablo-1.jpg" alt="Don Pablo">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/donpablo-2.jpg" alt="The Don">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/donpablo-3.jpg" alt="You Don Pablo">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/donpablo-4.jpg" alt="The Don Too">
-                        </li>
-                    </ul>
+            <!-- PAULI Card -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-6 w-full lg:w-3/4 mx-auto">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">PAULI</h2>
+                    <p class="text-gray-700 mb-4">Looking for the glue that holds <strong>8 Meg Stick</strong> together?
+                        Enter <strong>PAULI</strong>. One-fifth of <strong>We Used To See The Sky</strong>, the "Pablo"
+                        in Don Pablo, and the go-to guy for outsourced production. PAULI is 8 Meg Stick Records, no
+                        doubt about it.</p>
+                    <p class="text-gray-700 mb-4">2020 was the year PAULI found his voice. His mental state was laid
+                        bare for all to see, and 2021 promises more glimpses into his psyche. It was also the year he
+                        discovered the magic of open tuning and simple guitar chords, unlocking a whole new sonic
+                        palette.</p>
+                    <p class=“text-gray-700 mb-4”>On January 22nd, 2021, with their debut release <strong>4
+                            Walls</strong>, we remember those early lockdown days when the weather was warm, Zoom was a
+                        computer virus, and life felt like that weird limbo between Christmas and New Year, where you
+                        just eat and drink because you’re too stuffed and tipsy to do anything else. Then came
+                        <strong>Love Life</strong>, a raw, unfiltered look at how everyone online hides behind untrue
+                        personas, like characters in a twisted digital masquerade. It was a mirror held up to the face
+                        of social media, reflecting the masks we wear and the truths we bury. And just when you thought
+                        you had PAULI figured out, they dropped <strong>Caught</strong>, a haunting exploration of the
+                        darkest time in their life. It was a descent into the abyss, but also the catalyst for a
+                        powerful transformation, turning pain into a beacon of hope and change. Each track was a chapter
+                        in a story that was as gripping as it was real, pulling no punches and leaving no stone
+                        unturned.</p>
                 </div>
             </div>
-        </div>
-    <!-- PAULI -->
-        <div class="content-container row container-light">
-            <div class="content-one col-xl-4">
-                <img src="images/pauli.svg" alt="PAULI logo">
-            </div>
-            <div class="content-two col-xl-4">
-                <p>If you are looking for the dark matter that holds 8 Meg Stick together, let’s face it who isn’t? Then look no further than PAULI. One fifth We Used To See The Sky, the Pablo in Don Pablo and who Pengamax uses when they outsource production duties PAULI is 8 Meg Stick Records (no actually is).</p>
-                <p>2020 was the year PAULI found his words and voice. The state of his mind has been documented through the year and we’ll get a chance to peek inside throughout 2021. It also the year he discovered the joys of open tuning and single figure guitar chords unlocking an entire audio pallet that was previously beyond him…</p>
-                <p>So on the 22nd of January with the debut release 4 Walls we remember those early moments of lockdown when the weather was warm, Zoom was a computer virus and it all felt like that bit between Christmas and New Year when you just eat and drink because you’re too drunk and full to leave the house.</p>
-                <ul class="list-inline artist-social-links text-center">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/8-Meg-Stick-Records-113706007210863" target="_blank">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/8MegStick" target="_blank">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/eightmegstick/" target="_blank">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.tiktok.com/@8megstickrecords?lang=en" target="_blank">
-                        <i class="fab fa-tiktok" aria-hidden="true"></i>
-                        <span class="sr-only">TikTok</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/channel/UCgvI48nU42cIo4sczp4OefA" target="_blank">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-three col-xl-4">
-                <div class="artist-youtube">
-                    <iframe src="https://www.youtube.com/embed/exEd0L2q6Os" title="PAULI on YouTube"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="artist-images">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pauli-1.jpg" alt="PAULI Wide Image">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pauli-2.jpg" alt="PAULI Shoes Off">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pauli-3.jpg" alt="PAULI Walk Away">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pauli-4.jpg" alt="PAULI Scream">
-                        </li>  
-                    </ul>
-                </div>
-            </div>
-        </div>
-    <!-- Pengamax -->
-        <div class="content-container row container-dark">
-            <div class="content-one col-xl-4">
-                <img src="images/pengamax.svg" alt="Pengamax logo">
-            </div>
-            <div class="content-two col-xl-4">
-                <p>Not all things are created equal. And that is true of the curious beast and multi-instrumentalist that is Pengamax.</p>
-                <p>With a veritable avalanche of output waiting on the 8 Meg Stick drive we can confidentially state the Pengamax’s desire to shape shift around the musical spectrum is in full throttle.</p>
-                <p>First single Mitti is a confident stride in the world of blues. It is a deeply affecting piece of storytelling that is modern, contemporary and resonates against pandemic times. But there is no resting on the laurels of the well-trodden virtuoso guitar playing path and the second release sees Pengamax in widescreen cinematic mood. Ethereal and epic soundscapes morph through time and space and evoke scenes of a sunrise over a world yet known on their E.P. G Formations.</p>
-                <p>And what will be next? Your guess is as good as mine…</p>
-                <ul class="list-inline artist-social-links text-center">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/pengamaxmusic" target="_blank">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/eightmegstick/" target="_blank">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-three col-xl-4">
-                <div class="artist-youtube">
-                    <iframe src="https://www.youtube.com/embed/lqsIHcMtfVc" title="Pengamax on YouTube"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="artist-images">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pengamax-1.jpg" alt="Pengamax">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pengamax-2.jpg" alt="Pengamax Distortion">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pengamax-3.jpg" alt="Mitti Cover">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/pengamax-4.jpg" alt="G Formations Cover">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    <!-- We Used To See The Sky -->
-        <div class="content-container row container-light">
-            <div class="content-one col-xl-4">
-                <img src="images/wutsts.svg" alt="We Used To See The Sky logo">
-            </div>
-            <div class="content-two col-xl-4">
-                <p>Bristol five Piece We Used To See The Sky owe their existence to Damon Albarn and their name to British Romanticism painter Samuel Palmer. Let’s start with more famous former (unless of course you are a keen observer of the nineteenth century art scene). We Used To See The Sky were formed from the ashes of a non-starting Damon Albarn tribute act after a conversation in an empty carpark where keyboard player Paul and singer Mike agreed that starting an originals band was the future. Steve on guitar also migrated across from the tribute act Allbarn (geddit?) and so We Used To See The Sky became so.</p>
-                <p>Regulars on the Bristol live circuit pre-pandemic the 5 piece, which also includes Holly on bass and the other Steve on drums, had become a real favourite of venues like the Thunderbolt and the Louisiana.</p>
-                <p>Their non-linier musical style fits in well with the 8 Meg Stick ethos that anything goes. Debut track, Slippy Guppy (yep actually is) offers a warm radiance of acoustic guitars reverberating through you being whilst second track Deep Fake is built on a mass of big beats and articulates the modern mistrust of technology.</p>
-                <p>As for Samuel Palmer, you need to see We Used To See The Sky live where keyboard player Paul likes to conduct a lecture on the subject usually when the band are tuning down.</p>
-                <ul class="list-inline artist-social-links text-center">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/wutsts/" target="_blank">
-                        <i class="fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/WUTSTS" target="_blank">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/weusedtoseethesky/" target="_blank">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/channel/UCjzv5VdI3UDJezagOnjtJCQ" target="_blank">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://weusedtoseethesky.com/" target="_blank">
-                        <i class="fas fa-link" aria-hidden="true"></i>
-                        <span class="sr-only">Website</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="content-three col-xl-4">
-                <div class="artist-youtube">
-                    <iframe src="https://www.youtube.com/embed/cG4IlvdmhqM" title="We Used See the Sky on YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="artist-images">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/wutsts-1.jpg" alt="We Used To See The Sky at Mr Wolfs">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/wutsts-2.jpg" alt="Mike at the Louisiana">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/wutsts-3.jpg" alt="Mike">
-                        </li>
-                        <li class="list-inline-item">
-                            <img class="ImgThumbnail" src="images/artists/wutsts-4.jpg" alt="We Used To See The Sky">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    <!-- The modal used for the gallery -->
-        <div class="modal">
-            <span class="close">&times;</span>
-            <img class="modalImage" id="img01" src="#" alt="Artist Images">
+            <!-- Pengamax Card -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-6 w-full lg:w-3/4 mx-auto">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">Pengamax</h2>
+                    <p class="text-gray-700 mb-4">Not all things are created equal, and that includes the enigmatic
+                        multi-instrumentalist <strong>Pengamax</strong>. With a mountain of unreleased tracks on the 8
+                        Meg Stick drive, Pengamax's desire to explore the musical spectrum is in overdrive.</p>
+                    <p class="text-gray-700 mb-4">Their first single, <strong>Mitti</strong>, is a bold step into the
+                        blues, a modern, pandemic-era tale that hits hard. But Pengamax doesn't rest on their laurels.
+                        Their second release dives into cinematic territory, with ethereal and epic soundscapes that
+                        transport you to a sunrise over an unknown world on their E.P., <strong>G Formations</strong>.
+                        What's next? Your guess is as good as mine.</p>
+                </div>
+            </div>
+
+            <!-- We Used To See The Sky Card -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-6 w-full lg:w-3/4 mx-auto">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2">We Used To See The Sky</h2>
+                    <p class="text-gray-700 mb-4"><strong>We Used To See The Sky</strong>, a Bristol five-piece, owes
+                        its existence to Damon Albarn and its name to British Romantic painter Samuel Palmer. Formed
+                        from the ashes of a failed Damon Albarn tribute act, keyboard player Paul and singer Mike
+                        decided that creating original music was the way forward. Guitarist Steve also made the jump
+                        from the tribute act <strong>Allbarn</strong> (get it?), and thus, We Used To See The Sky was
+                        born.</p>
+                    <p class="text-gray-700 mb-4">Their non-linear musical style fits perfectly with the 8 Meg Stick
+                        ethos of "anything goes." Their debut track, <strong>Slippy Guppy</strong> (yes, really),
+                        radiates with acoustic warmth, while their second track, <strong>Deep Fake</strong>, is a
+                        beat-heavy commentary on modern technology's mistrust.</p>
+                    <p class="text-gray-700 mb-4">And as for Samuel Palmer? Catch We Used To See The Sky live, where
+                        keyboard player Paul often gives impromptu lectures on the subject while the band tunes up.</p>
+                </div>
+            </div>
         </div>
     </main>
-<!-- Footer -->
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="footer-logo col-sm-6">
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="index.html"><img src="images/8meglogo.svg" style="height: 40px;" alt="Top"></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <p>8 Meg Stick Records 2021</p>
-                    </li>
-                </ul>
-            </div>        
-            <div class="footer-links col-sm-6">
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/8-Meg-Stick-Records-113706007210863" target="_blank">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/8MegStick" target="_blank">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/eightmegstick/" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.tiktok.com/@8megstickrecords?lang=en" target="_blank">
-                            <i class="fab fa-tiktok" aria-hidden="true"></i>
-                            <span class="sr-only">TikTok</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/channel/UCgvI48nU42cIo4sczp4OefA" target="_blank">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>   
-            </div>
-        </div>
+    <footer id="footer" class="bg-gray-800 text-white p-4 text-center">
+        <a href="mailto:paul@8megstickrecords.com" class="hover:underline">paul@8megstickrecords.com</a>
     </footer>
-<!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Gallery JavaScript -->
-<!-- https://www.tutorialspoint.com/how-to-create-a-modal-image-gallery-with-css-and-javascript -->
-    <script>
-    var modalEle = document.querySelector(".modal");
-    var modalImage = document.querySelector(".modalImage");
-    Array.from(document.querySelectorAll(".ImgThumbnail")).forEach(item => {
-    item.addEventListener("click", event => {
-    modalEle.style.display = "block";
-    modalImage.src = event.target.src;
-    });
-    });
-    document.querySelector(".close").addEventListener("click", () => {
-    modalEle.style.display = "none";
-    });
-    </script>
 </body>
+
 </html>

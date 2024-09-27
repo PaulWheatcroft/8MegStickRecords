@@ -1,0 +1,32 @@
+.streaming-link {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  text-shadow: 0 0 15px pink;
+}
+
+h2,
+h4 {
+  font-family: "Monofett", monospace;
+}
+
+h1 {
+  font-stretch: extra-condensed;
+}
+
+h3, a {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 600;
+}
+
+.hero {
+  background-image: url('../images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-links {
+  background-color: rgba(118, 228, 255, 0.3);
+}
