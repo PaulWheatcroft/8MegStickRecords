@@ -5,84 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nanum+Gothic:wght@400;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <title>8 Meg Stick Records</title>
 </head>
 
-<body class="flex flex-col min-h-screen">
-    <nav class="bg-pink-300 p-4 flex justify-between items-center border-b-2 border-solid border-blue-200">
-        <span id="logo">
-            <img src="./images/8meglogo.svg" class="h-12" alt="Logo">
-        </span>
-        <ul class="flex space-x-4 text-lime-600">
-            <li><a href="#releases" class="">Releases</a></li>
-            <li><a href="artists.html" class="">Artists</a></li>
-            <li><a href="about.html" class="">About</a></li>
-        </ul>
-    </nav>
-    <main id="app" class="flex-grow bg-gray-200">
-        <div id="hero" class="min-h-screen flex flex-col items-center justify-center hero">
-            <h1 class="text-8xl font-bold tracking-tight">{{releases[0].title}}</h1>
-            <h2 class="text-5xl font-bold">{{releases[0].artist}}</h2>
-            <div class="hero-links border-2 border-solid border-black mt-2 p-2 rounded-full">
-                <div class="spotify pb-2"><a :href="`${releases[0].spotify}`" class="streaming-link"><img
-                            src="./images/spotify.svg" alt="Link to Spotify" class="streaming-link"></a>
-                </div>
-                <div class="apple-music pb-2"><a :href="`${releases[0].apple}`" class="streaming-link"><img
-                            src="./images/applemusic.svg" alt="Link to Apple Music" class="streaming-link"></a></div>
-                <div class="youtube-music pb-1"><a :href="`${releases[0].youtube}`" class="streaming-link"><img
-                            src="./images/youtubemusic.svg" alt="Link to YouTube Music" class="streaming-link"></a>
-                </div>
-                <div class="deezer pb-1"><a :href="`${releases[0].deezer}`" class="streaming-link"><img src="./images/deezer.svg"
-                            alt="Link to Deezer" class="streaming-link"></a></div>
-                <div class="amazon"><a :href="`${releases[0].amazon}`" class="streaming-link"><img src="./images/amazon.svg"
-                            alt="Link to Amazon Music" class="streaming-link"></a>
-                </div>
+<body>
+    <div id="app-loader" class="app-loader" aria-live="polite" aria-label="Loading">
+        <div class="app-loader__spinner"></div>
+    </div>
+    <div id="app" v-cloak>
+        <nav class="site-nav">
+            <a href="#" class="site-nav__logo" @click.prevent="scrollToTop">
+                <img src="./images/8meglogo.svg" alt="8 Meg Stick Records">
+            </a>
+            <div
+                class="artist-filter"
+                :class="{ 'artist-filter--open': isFilterOpen }"
+                ref="artistFilter"
+            >
+                <button
+                    type="button"
+                    class="artist-filter__trigger"
+                    :class="filterTriggerClass"
+                    :style="filterTriggerStyle"
+                    @click="toggleFilter"
+                    :aria-expanded="isFilterOpen"
+                    aria-haspopup="listbox"
+                >
+                    <span class="artist-filter__label">{{ filterLabel }}</span>
+                    <span class="artist-filter__chevron" aria-hidden="true"></span>
+                </button>
+                <ul class="artist-filter__menu" role="listbox" v-show="isFilterOpen">
+                    <li role="option">
+                        <button
+                            type="button"
+                            class="artist-filter__option artist-filter__option--all"
+                            :class="{ 'artist-filter__option--selected': selectedArtist === 'All' }"
+                            @click="selectArtist('All')"
+                        >
+                            All artists
+                        </button>
+                    </li>
+                    <li v-for="artist in artists" :key="artist" role="option">
+                        <button
+                            type="button"
+                            class="artist-filter__option artist-filter__animated-bg"
+                            :class="{ 'artist-filter__option--selected': selectedArtist === artist }"
+                            :style="artistOptionStyle(artist)"
+                            @click="selectArtist(artist)"
+                        >
+                            {{ artist }}
+                        </button>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div id="releases" class="p-4">
-            <h2 class="text-center pb-5 text-5xl">Releases</h2>
-            <ul class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <li v-for="release in releases" id="{{ release.id }}" class="">
-                    <div class="w-full bg-white p-4 rounded shadow text-center flex flex-col">
-                        <h3 class="track-title bg-blue-200 rounded">
-                            {{ release.title }}
-                        </h3>
-                        <h4 class="artist text-3xl">
-                            {{ release.artist }}
-                        </h4>
-                        <img :src="`./images/${release.cover}`" :alt="`Cover image for ${release.title}`"
-                            class="rounded">
-                        <div class="links flex justify-between bg-pink-300 mt-2 p-2 rounded-full">
-                            <div class="spotify "><a :href="`${release.spotify}`" class="streaming-link"><img
-                                        src="./images/spotify.svg" alt="Link to Spotify" class="streaming-link"></a>
-                            </div>
-                            <div class="apple-music"><a :href="`${release.apple}`" class="streaming-link"><img
-                                        src="./images/applemusic.svg" alt="Link to Apple Music"
-                                        class="streaming-link"></a></div>
-                            <div class="youtube-music"><a :href="`${release.youtube}`" class="streaming-link"><img
-                                        src="./images/youtubemusic.svg" alt="Link to YouTube Music"
-                                        class="streaming-link"></a></div>
-                            <div class="deezer"><a :href="`${release.deezer}`" class="streaming-link"><img
-                                        src="./images/deezer.svg" alt="Link to Deezer" class="streaming-link"></a></div>
-                            <div class="tidal"><a :href="`${release.amazon}`" class="streaming-link"><img
-                                        src="./images/amazon.svg" alt="Link to Amazon Music" class="streaming-link"></a>
-                            </div>
+        </nav>
+
+        <main class="releases">
+            <section
+                v-for="release in filteredReleases"
+                :key="release.id"
+                class="release-section"
+                :data-release-id="release.id"
+            >
+                <div class="release-sticky">
+                    <div
+                        class="release-bg"
+                        :class="{ 'release-bg--loaded': isCoverLoaded(release.id) }"
+                        :style="isCoverLoaded(release.id) ? bgStyle(release) : null"
+                    ></div>
+                    <div class="release-content" :style="contentStyle(release.id)">
+                        <p class="release-artist">{{ release.artist }}</p>
+                        <h2 class="release-title">{{ release.title }}</h2>
+                        <div class="release-cover-wrap" :style="revealStyle(release.id, 'cover')">
+                            <div
+                                v-if="isCoverLoaded(release.id) && !isCoverImageReady(release.id)"
+                                class="release-cover-spinner"
+                                aria-hidden="true"
+                            ></div>
+                            <img
+                                v-show="isCoverLoaded(release.id)"
+                                class="release-cover"
+                                :class="{ 'release-cover--ready': isCoverImageReady(release.id) }"
+                                :src="isCoverLoaded(release.id) ? release.cover : undefined"
+                                :alt="`Cover for ${release.title}`"
+                                @load="onCoverImageLoad(release.id)"
+                                @error="onCoverImageLoad(release.id)"
+                            >
+                        </div>
+                        <div class="release-links" :style="revealStyle(release.id, 'links')">
+                            <a :href="release.spotify" class="release-links__item" target="_blank" rel="noopener">
+                                <img src="./images/spotify.svg" alt="Spotify" class="streaming-link">
+                            </a>
+                            <a :href="release.apple" class="release-links__item" target="_blank" rel="noopener">
+                                <img src="./images/applemusic.svg" alt="Apple Music" class="streaming-link">
+                            </a>
+                            <a :href="release.youtube" class="release-links__item" target="_blank" rel="noopener">
+                                <img src="./images/youtubemusic.svg" alt="YouTube Music" class="streaming-link">
+                            </a>
+                            <a :href="release.deezer" class="release-links__item" target="_blank" rel="noopener">
+                                <img src="./images/deezer.svg" alt="Deezer" class="streaming-link">
+                            </a>
+                            <a :href="release.tidal" class="release-links__item" target="_blank" rel="noopener">
+                                <img src="./images/tidal.svg" alt="Tidal" class="streaming-link">
+                            </a>
+                            <a :href="release.amazon" class="release-links__item" target="_blank" rel="noopener">
+                                <img src="./images/amazon.svg" alt="Amazon Music" class="streaming-link">
+                            </a>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <footer id="footer" class="bg-gray-800 text-white p-4 text-center">
-        <a href="mailto:paul@8megstickrecords.com" class="hover:underline">paul@8megstickrecords.com</a>
-    </footer>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./javascript/getData.js"></script>
 </body>
-<script src="./javascript/getData.js"></script>
 
 </html>
