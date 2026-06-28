@@ -63,6 +63,7 @@ async function getData() {
 
                 let observer = null;
                 let ticking = false;
+                let lastViewportHeight = window.innerHeight;
 
                 function clamp(value, min, max) {
                     return Math.max(min, Math.min(max, value));
@@ -167,7 +168,9 @@ async function getData() {
                         const endOffset = viewportHeight * -0.3;
 
                         if (index === 0 && window.scrollY < sectionTop + sectionHeight) {
-                            contentOffset[id] = 0;
+                            const introLift = viewportHeight * 0.12 * clamp(progress / 0.15, 0, 1);
+                            const fullOffset = startOffset + progress * (endOffset - startOffset);
+                            contentOffset[id] = -introLift + progress * fullOffset;
                             coverReveal[id] = 1;
                             linksReveal[id] = 1;
                             return;
@@ -218,6 +221,13 @@ async function getData() {
                     if (!ticking) {
                         ticking = true;
                         requestAnimationFrame(updateScrollProgress);
+                    }
+                }
+
+                function onViewportResize() {
+                    if (window.innerHeight !== lastViewportHeight) {
+                        lastViewportHeight = window.innerHeight;
+                        updateScrollProgress();
                     }
                 }
 
@@ -284,10 +294,9 @@ async function getData() {
                         return null;
                     }
 
-                    const { bg, accent } = artistColor(selectedArtist.value);
+                    const { bg } = artistColor(selectedArtist.value);
                     return {
                         "--artist-gradient": bg,
-                        boxShadow: `0 4px 20px ${accent}66, 0 4px 16px rgba(0, 0, 0, 0.35)`,
                     };
                 });
 
@@ -316,6 +325,7 @@ async function getData() {
                     document.addEventListener("click", onDocumentClick);
                     document.addEventListener("keydown", onDocumentKeydown);
                     window.addEventListener("scroll", onScroll, { passive: true });
+                    window.visualViewport?.addEventListener("resize", onViewportResize, { passive: true });
                     nextTick(() => {
                         setupLazyLoader();
                         eagerLoadFirstCover();
@@ -331,6 +341,7 @@ async function getData() {
                     document.removeEventListener("click", onDocumentClick);
                     document.removeEventListener("keydown", onDocumentKeydown);
                     window.removeEventListener("scroll", onScroll);
+                    window.visualViewport?.removeEventListener("resize", onViewportResize);
                     if (observer) {
                         observer.disconnect();
                     }
